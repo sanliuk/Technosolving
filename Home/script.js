@@ -50,33 +50,34 @@ window.addEventListener('scroll', () => {
 // Form Submission with Animation
 const contactForm = document.getElementById('contactForm');
 const submitButton = contactForm.querySelector('.submit-button');
+const successMessage = document.querySelector('.success-message');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    // Add loading state
-    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
-    submitButton.disabled = true;
-    
-    // Simulate form submission
-    setTimeout(() => {
-        // Show success message
-        submitButton.innerHTML = '<i class="fas fa-check"></i>';
-        submitButton.style.backgroundColor = '#10B981';
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
         
-        // Reset form after delay
+        // Get form data
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value
+        };
+        
+        // Log form data (replace with your actual form submission logic)
+        console.log('Form Data:', formData);
+        
+        // Show success message
+        successMessage.classList.add('show');
+        
+        // Reset form
+        contactForm.reset();
+        
+        // Hide success message after 5 seconds
         setTimeout(() => {
-            contactForm.reset();
-            submitButton.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
-            submitButton.disabled = false;
-            submitButton.style.backgroundColor = '';
-        }, 2000);
-    }, 1500);
-});
+            successMessage.classList.remove('show');
+        }, 5000);
+    });
+}
 
 // Scroll to Top Button with Animation
 const scrollButton = document.createElement('button');
