@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technosolving - Energy Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">Technosolving</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="nightModeToggle" class="night-mode-toggle" aria-label="Toggle night mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="navToggle" class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Energy Solutions for Tomorrow</h1>
+            <p>Bridging Italy and Iran with innovative power generation solutions</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button">Get Started</a>
+                <a href="#solutions" class="cta-button secondary">Explore Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Comprehensive energy solutions for power generation</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-industry"></i>
+                <h3>Power Plant Solutions</h3>
+                <p>Complete solutions for power generation facilities, including design, implementation, and maintenance.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-solar-panel"></i>
+                <h3>Renewable Energy</h3>
+                <p>Integration of renewable energy sources with traditional power generation systems.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Maintenance & Support</h3>
+                <p>24/7 technical support and maintenance services for power generation equipment.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-globe"></i>
+                <h3>International Trade</h3>
+                <p>Facilitation of equipment and technology trade between Italy and Iran.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="solutions">
+        <div class="section-header">
+            <h2>Energy Solutions</h2>
+            <p>Tailored solutions for different power generation needs</p>
+        </div>
+        <div class="solutions-container">
+            <div class="solution-item">
+                <h3>Thermal Power Plants</h3>
+                <p>Complete solutions for thermal power generation, including boilers, turbines, and control systems.</p>
+            </div>
+            <div class="solution-item">
+                <h3>Grid Integration</h3>
+                <p>Advanced solutions for power grid integration and distribution systems.</p>
+            </div>
+            <div class="solution-item">
+                <h3>Energy Efficiency</h3>
+                <p>Optimization solutions to improve power plant efficiency and reduce emissions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About Us</h2>
+            <p>Your trusted partner in international energy solutions</p>
+        </div>
+        <div class="about-content">
+            <p>Technosolving is a leading provider of power generation solutions, specializing in the Italian and Iranian markets. With years of experience in the energy sector, we deliver innovative and reliable solutions for power plants and energy infrastructure.</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2</h3>
+                    <p>Countries Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Get in touch with our team of experts</p>
+        </div>
+        <div class="contact-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Italy Office</h3>
+                        <p>Via Roma 123, Milano, Italy</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Iran Office</h3>
+                        <p>Tehran Business District, Iran</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+39 02 1234567</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@technosolving.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Technosolving</h3>
+                <p>Your trusted partner in international energy solutions between Italy and Iran.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Technosolving. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
