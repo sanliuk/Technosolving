@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Expertise - Technosolving SRL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../Home/index.html"><span class="tech">TECH</span><span class="nosol">NOSOL</span><span class="ving">VING</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#instruments" class="expertise-link active" data-expertise="instruments">Instruments</a></li>
+                <li><a href="#mechanical" class="expertise-link" data-expertise="mechanical">Mechanical Components</a></li>
+                <li><a href="#metalworking" class="expertise-link" data-expertise="metalworking">Metalworking</a></li>
+                <li><a href="#thermal" class="expertise-link" data-expertise="thermal">Thermal & Acoustic</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="nightModeToggle" class="night-mode-toggle" aria-label="Toggle night mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="navToggle" class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="expertise-content" class="expertise-section">
+        <div class="section-header">
+            <h2 id="expertise-title">Instruments</h2>
+            <p id="expertise-description">High-precision instruments and measurement solutions for industrial applications</p>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="carousel-container">
+            <div class="carousel-wrapper" id="expertise-carousel">
+                <!-- Images will be loaded dynamically via JavaScript -->
+            </div>
+            
+            <button class="carousel-button prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-button next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <section class="expertise-details">
+        <div class="details-container">
+            <div id="expertise-list" class="expertise-list">
+                <!-- Content will be loaded dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
