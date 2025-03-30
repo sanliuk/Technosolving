@@ -394,6 +394,13 @@ body {
     margin: 0 auto;
 }
 
+.solutions-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
 .solution-item {
     padding: 2rem;
     background-color: var(--card-bg);
@@ -577,6 +584,24 @@ body {
     font-size: 1.1rem;
     line-height: 1.6;
     opacity: 0.9;
+}
+
+.info-item p a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-item p a:hover {
+    color: #2980b9;
+}
+
+[data-theme="dark"] .info-item p a {
+    color: #fff;
+}
+
+[data-theme="dark"] .info-item p a:hover {
+    color: #ecf0f1;
 }
 
 /* Footer */

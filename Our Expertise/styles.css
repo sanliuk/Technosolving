@@ -58,7 +58,7 @@ body {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.8rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,6 +78,7 @@ body {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(133, 133, 133, 0.178);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
 }
 
 .logo .tech {
@@ -110,7 +111,9 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
@@ -119,8 +122,9 @@ body {
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.8rem;
     border-radius: 5px;
+    white-space: nowrap;
 }
 
 .nav-links a:hover,
@@ -132,7 +136,7 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 .nav-toggle {
@@ -361,6 +365,32 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .nav-container {
+        padding: 0.8rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo a {
+        font-size: 1.3rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .nav-links {
+        gap: 0.8rem;
+    }
+    
+    .nav-links a {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
@@ -368,10 +398,11 @@ body {
 
     .nav-links {
         display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 60px;
         left: 0;
         width: 100%;
+        height: calc(100vh - 60px);
         background-color: var(--nav-bg);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
@@ -380,6 +411,7 @@ body {
         flex-direction: column;
         text-align: center;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        overflow-y: auto;
     }
 
     .nav-links.active {
@@ -387,14 +419,16 @@ body {
     }
 
     .nav-links li {
+        width: 100%;
         margin: 0.5rem 0;
     }
 
     .nav-links a {
         display: block;
-        padding: 0.8rem;
+        padding: 1rem;
         width: 100%;
         border-radius: 5px;
+        font-size: 1rem;
     }
 
     .nav-links a:hover,
@@ -404,7 +438,15 @@ body {
     }
 
     .expertise-section {
-        padding: 6rem 1rem 2rem;
+        padding: 5rem 1rem 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
     }
 
     .carousel-container {
@@ -424,6 +466,7 @@ body {
     .expertise-list {
         grid-template-columns: 1fr;
         padding: 1rem;
+        gap: 1rem;
     }
     
     .expertise-item {
@@ -431,17 +474,45 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+    .nav-container {
+        padding: 0.6rem;
+    }
+
+    .logo a {
+        font-size: 1.2rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .nav-toggle {
+        font-size: 1.3rem;
+    }
+
+    .night-mode-toggle {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .expertise-section {
+        padding: 4rem 0.8rem 1.5rem;
+    }
+
     .section-header h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .section-header p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        padding: 0 1rem;
     }
 
     .carousel-container {
         min-height: 300px;
+        margin: 0 0.8rem;
+    }
+
+    .carousel-slide {
+        padding: 1rem;
     }
 
     .carousel-slide img {
@@ -452,5 +523,42 @@ body {
         width: 35px;
         height: 35px;
         font-size: 0.9rem;
+    }
+
+    .expertise-list {
+        padding: 0.8rem;
+        gap: 0.8rem;
+    }
+    
+    .expertise-item {
+        padding: 0.8rem;
+    }
+
+    .expertise-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .expertise-item li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+    }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+    .logo a {
+        font-size: 1.1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-container {
+        min-height: 250px;
+    }
+
+    .carousel-slide img {
+        max-height: 250px;
     }
 } 
