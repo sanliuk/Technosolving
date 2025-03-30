@@ -53,29 +53,54 @@ const submitButton = contactForm.querySelector('.submit-button');
 const successMessage = document.querySelector('.success-message');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        // Get form data
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            message: document.getElementById('message').value
-        };
+        // Disable submit button and show loading state
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         
-        // Log form data (replace with your actual form submission logic)
-        console.log('Form Data:', formData);
-        
-        // Show success message
-        successMessage.classList.add('show');
-        
-        // Reset form
-        contactForm.reset();
-        
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-            successMessage.classList.remove('show');
-        }, 5000);
+        try {
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                company: document.getElementById('company').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Send form data to backend
+            const response = await fetch('https://formspree.io/f/xvgkbwpn', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
+            
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            
+            // Show success message
+            successMessage.classList.add('show');
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.classList.remove('show');
+            }, 5000);
+            
+        } catch (error) {
+            console.error('Error:', error);
+            alert('There was an error sending your message. Please try again later.');
+        } finally {
+            // Re-enable submit button and restore original text
+            submitButton.disabled = false;
+            submitButton.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        }
     });
 }
 
