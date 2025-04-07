@@ -31,7 +31,7 @@ const expertiseData = {
         title: "Mechanical Components",
         description: "High-quality mechanical components and systems for industrial applications",
         images: [
-            "../Img/MECHANICAL COMPONENTS/Damper.jpg",
+            "../Img/MECHANICAL COMPONENTS/DAMPER.jpg",
             "../Img/MECHANICAL COMPONENTS/air_treatment.jpg",
             "../Img/MECHANICAL COMPONENTS/Mech3.png"
         ],
@@ -48,7 +48,7 @@ const expertiseData = {
         title: "Metalworking",
         description: "Professional metalworking solutions and equipment",
         images: [
-            "../Img/METALWORKING/metal1.png",
+            "../Img/METALWORKING/Metal1.png",
             "../Img/METALWORKING/metal2.jpg",
             "../Img/METALWORKING/metal3.jpg"
         ],
