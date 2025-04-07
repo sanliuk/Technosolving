@@ -9,7 +9,8 @@ const expertiseData = {
             "../Img/INSTRUMENTS a OUR PARTNERS/thermowell.JPG",
             "../Img/INSTRUMENTS a OUR PARTNERS/pressure.JPG",
             "../Img/INSTRUMENTS a OUR PARTNERS/CPS11E-pH-sensor-Memosens-straight.jpg",
-            "../Img/INSTRUMENTS a OUR PARTNERS/differential pressure.JPG"
+            "../Img/INSTRUMENTS a OUR PARTNERS/differential pressure.JPG",
+            "../Img/INSTRUMENTS a OUR PARTNERS/instrument5.jpg"
         ],
         details: [
             "Electronic pressure transmitter",
@@ -30,9 +31,9 @@ const expertiseData = {
         title: "Mechanical Components",
         description: "High-quality mechanical components and systems for industrial applications",
         images: [
-            "../Img/MECHANICAL COMPONENTS/mechanical1.jpg",
-            "../Img/MECHANICAL COMPONENTS/mechanical2.jpg",
-            "../Img/MECHANICAL COMPONENTS/mechanical3.jpg"
+            "../Img/MECHANICAL COMPONENTS/Damper.jpg",
+            "../Img/MECHANICAL COMPONENTS/air_treatment.jpg",
+            "../Img/MECHANICAL COMPONENTS/Mech3.png"
         ],
         details: [
             "Fans",
@@ -47,9 +48,9 @@ const expertiseData = {
         title: "Metalworking",
         description: "Professional metalworking solutions and equipment",
         images: [
-            "../Img/METALWORKING/metalworking1.jpg",
-            "../Img/METALWORKING/metalworking2.jpg",
-            "../Img/METALWORKING/metalworking3.jpg"
+            "../Img/METALWORKING/metal1.png",
+            "../Img/METALWORKING/metal2.jpg",
+            "../Img/METALWORKING/metal3.jpg"
         ],
         details: [
             "Laser machines",
@@ -64,9 +65,10 @@ const expertiseData = {
         description: "Advanced thermal and acoustic solutions for industrial applications",
         images: [
             "../Img/THERMAL&ACOUSTIC/SILENCERS.jpg",
-            "../Img/THERMAL&ACOUSTIC/DAMPER.jpg",
             "../Img/THERMAL&ACOUSTIC/texile joint.jpg",
-            "../Img/THERMAL&ACOUSTIC/air_treatment.jpg"
+            "../Img/THERMAL&ACOUSTIC/Therm3.jpg",
+            "../Img/THERMAL&ACOUSTIC/Therm4.jpg",
+            "../Img/THERMAL&ACOUSTIC/Therm5.jpg"
         ],
         details: [
             "Silica Fabric",
