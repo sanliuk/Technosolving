@@ -80,63 +80,19 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.logo .tech {
-    color: #2ecc71;  /* Verde */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3),
-                 -0.5px -0.5px 0 #000,
-                 0.5px -0.5px 0 #000,
-                -0.5px 0.5px 0 #000,
-                 0.5px 0.5px 0 #000;
-}
 
-.logo .nosol {
-    color: #ffffff;  /* Bianco */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3),
-                 -0.5px -0.5px 0 #000,
-                 0.5px -0.5px 0 #000,
-                -0.5px 0.5px 0 #000,
-                 0.5px 0.5px 0 #000;
-}
-
-.logo .ving {
-    color: #e74c3c;  /* Rosso */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3),
-                 -0.5px -0.5px 0 #000,
-                 0.5px -0.5px 0 #000,
-                -0.5px 0.5px 0 #000,
-                 0.5px 0.5px 0 #000;
-}
 
 [data-theme="dark"] .logo a {
     background: rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-[data-theme="dark"] .logo .tech {
-    color: #2ecc71;  /* Verde */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3),
-                 -0.5px -0.5px 0 #000,
-                 0.5px -0.5px 0 #000,
-                -0.5px 0.5px 0 #000,
-                 0.5px 0.5px 0 #000;
-}
 
-[data-theme="dark"] .logo .nosol {
-    color: #ffffff;  /* Bianco */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3),
-                 -0.5px -0.5px 0 #000,
-                 0.5px -0.5px 0 #000,
-                -0.5px 0.5px 0 #000,
-                 0.5px 0.5px 0 #000;
-}
 
-[data-theme="dark"] .logo .ving {
-    color: #e74c3c;  /* Rosso */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3),
-                 -0.5px -0.5px 0 #000,
-                 0.5px -0.5px 0 #000,
-                -0.5px 0.5px 0 #000,
-                 0.5px 0.5px 0 #000;
+.logo-img {
+    max-width: 150px; /* Regola la dimensione massima */
+    height: auto; /* Mantieni le proporzioni */
+    display: block;
 }
 
 .nav-links {
@@ -1100,4 +1056,4 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
-} 
+}
